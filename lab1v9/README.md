@@ -15,6 +15,4 @@
 
 ## Приклад виводу
 
-\`\`\`
 <img width="463" height="120" alt="image" src="https://github.com/user-attachments/assets/3e691e25-07b2-49b9-a374-ed5d2ddd56bf" />
-\`\`\`
