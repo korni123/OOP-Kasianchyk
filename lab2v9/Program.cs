@@ -60,7 +60,7 @@ class Program
 
         Movie m1 = new Movie(); 
         Movie m2 = new Movie("Матриця", "Наукова фантастика", 8.7); 
-        Movie m3 = new Movie("Начало", "Трилер", 8.8);
+        Movie m3 = new Movie("Початок", "Трилер", 8.8);
 
         m1.Play();
         m2.Play();
