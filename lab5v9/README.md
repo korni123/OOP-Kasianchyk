@@ -39,3 +39,4 @@
 
 ## Приклад виводу
 
+<img width="383" height="259" alt="image" src="https://github.com/user-attachments/assets/2726bbf4-b857-4c91-b226-154c8a24ca77" />
