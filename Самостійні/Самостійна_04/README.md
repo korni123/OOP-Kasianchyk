@@ -85,3 +85,4 @@ dotnet run
 
 ## Приклад виводу
 
+<img width="571" height="440" alt="image" src="https://github.com/user-attachments/assets/ffb44159-52c6-4050-a6e0-26581ea790f9" />
