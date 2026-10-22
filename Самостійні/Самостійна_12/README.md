@@ -23,3 +23,4 @@
 
 ## Приклад виводу
 
+<img width="690" height="638" alt="image" src="https://github.com/user-attachments/assets/f3b53e4a-5885-4a2a-909e-0e9df186d981" />
