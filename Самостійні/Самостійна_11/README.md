@@ -32,3 +32,5 @@
 
 ## Приклад виводу
 
+<img width="631" height="729" alt="image" src="https://github.com/user-attachments/assets/cbe2a082-cf19-470d-9888-3ffa42c6eb65" />
+<img width="743" height="775" alt="image" src="https://github.com/user-attachments/assets/42e4edc1-81c1-468c-bec6-f63df2bfbf64" />
