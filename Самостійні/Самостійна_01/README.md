@@ -39,4 +39,5 @@ dotnet run
 ```
 
 ## Приклад виводу
+<img width="623" height="381" alt="image" src="https://github.com/user-attachments/assets/92627453-04f4-44f9-9aac-8237222b99b3" />
 
