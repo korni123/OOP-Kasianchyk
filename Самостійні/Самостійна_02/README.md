@@ -31,3 +31,4 @@ dotnet run
 
 ## Приклад виводу
 
+<img width="792" height="269" alt="image" src="https://github.com/user-attachments/assets/b2e7373a-e89a-4b6b-956c-4f7a6856b79c" />
