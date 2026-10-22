@@ -25,3 +25,4 @@
 
 ## Приклад виводу
 
+<img width="763" height="685" alt="image" src="https://github.com/user-attachments/assets/2488207b-2bd2-4c43-92d6-6092f6f60214" />
