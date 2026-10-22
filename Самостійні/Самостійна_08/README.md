@@ -4,21 +4,37 @@
 
 **Проєкт:** `IndependentWork8`
 
-Звіт з аналізом прикладів з open-source (Dapper, Serilog, Newtonsoft.Json), порівняльною таблицею складності та висновками — у файлі [REPORT.md](REPORT.md).
+## Опис класів
 
-## Реалізовані сценарії
+### FileMetadataCache (Dictionary)
 
-- **Сценарій 1 — `FileMetadataCache` (Dictionary):** кеш метаданих файлів `Dictionary<string, FileMetadata>` без урахування регістру назви; `Add`, `Get`, `Remove`, `Contains`.
-- **Сценарій 2 — `TagManager` (Dictionary + HashSet):** теги статей `Dictionary<string, HashSet<string>>`; `AddTag`, `RemoveTag`, `GetAllUniqueTags` (`UnionWith`), `FindCommonTags` (`IntersectWith`), `FindUniqueTags` (`ExceptWith`).
-- **Сценарій 3 — `SearchIndex` (Dictionary + HashSet):** інвертований індекс `Dictionary<string, HashSet<int>>`; `AddDocument`, `Search`, `SearchMultiple` (AND через `IntersectWith`).
-- **Custom comparer:** `HashSet<Person>` з `PersonNameComparer` — люди з однаковим ім'ям вважаються одним елементом.
+- **Поле:** `Dictionary<string, FileMetadata> _cache` — без урахування регістру назви файлу
+- **Методи:** `Add`, `Get` (через `TryGetValue`), `Remove`, `Contains`
 
-## Запуск
+### TagManager (Dictionary + HashSet)
 
-```
-cd Самостійні/Самостійна_08/IndependentWork8
-dotnet run
-```
+- **Поле:** `Dictionary<string, HashSet<string>> _articleTags` — стаття → теги
+- **Методи:** `AddTag`, `RemoveTag`, `GetAllUniqueTags` (`UnionWith`), `FindCommonTags` (`IntersectWith`), `FindUniqueTags` (`ExceptWith`)
+
+### SearchIndex (Dictionary + HashSet)
+
+- **Поле:** `Dictionary<string, HashSet<int>> _invertedIndex` — слово → документи
+- **Методи:** `AddDocument`, `Search`, `SearchMultiple` (AND через `IntersectWith`)
+
+### PersonNameComparer
+
+- Реалізує `IEqualityComparer<Person>` — люди з однаковим ім'ям вважаються однаковими в `HashSet<Person>`
+
+## Демонстрація в Main
+
+1. **Кеш файлів** — додавання, пошук `REPORT.DOCX` без урахування регістру, видалення
+2. **Теги** — дубль тегу не додається, об'єднання, перетин і різниця множин тегів
+3. **Пошуковий індекс** — пошук за одним і кількома словами
+4. **Custom comparer** — другий `John` не додається в множину
+
+## Звіт
+
+Аналіз прикладів з Dapper, Serilog і Newtonsoft.Json, порівняльна таблиця складності та висновки — у файлі [REPORT.md](REPORT.md).
 
 ## Приклад виводу
 

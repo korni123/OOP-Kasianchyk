@@ -4,31 +4,27 @@
 
 **Проєкт:** `InvertedIndexDemo`
 
-Опис реалізації, таблиця вимірювань для 10/100/1000/10000 документів, аналіз і висновок про поріг вигідності індексу — у файлі [REPORT.md](REPORT.md).
+## Опис класів
 
-## Що робить програма
+- **Document** — `Id`, `Title`, `Content`, `ToString()` у форматі `[Id] Title`
+- **TextProcessor** — `Tokenize` (нижній регістр + `Regex`, прибирає пунктуацію), `RemoveStopWords`
+- **InvertedIndex** — `Dictionary<string, HashSet<int>>` (слово → документи) і `Dictionary<int, Document>`; методи `AddDocument`, `SearchSingleWord`, `SearchMultipleWords` (AND через `IntersectWith`), `SearchAnyWord` (OR через `UnionWith`)
+- **PerformanceTest** — порівнює лінійний пошук і пошук через індекс з однаковою нормалізацією тексту
 
-1. **Вимірювання продуктивності** — для 10, 100, 1000 і 10 000 документів порівнює лінійний пошук і `InvertedIndex` для слів `programming` та `microsoft`, виводить час (мкс і тіки `Stopwatch`), час побудови індексу і перевірку, що обидва способи знайшли однакову кількість документів.
-2. **Інтерактивний пошук** — завантажує 5 тестових документів, показує кількість документів і унікальних слів, демонструє OR-пошук (`SearchAnyWord`), а далі в циклі шукає документи, що містять **усі** введені слова (`SearchMultipleWords`). Вихід — `exit`.
+## Демонстрація в Main
 
-## Запуск
+1. **Вимірювання** — для 10, 100, 1000 і 10 000 документів виводиться час лінійного пошуку, пошуку в індексі та побудови індексу
+2. **Інтерактивний пошук** — 5 документів, пошук за всіма введеними словами, вихід — `exit`
 
-```
-cd Самостійні/Самостійна_10/InvertedIndexDemo
-dotnet run
-```
+## Звіт
+
+Таблиця вимірювань, аналіз і висновок про поріг вигідності індексу — у файлі [REPORT.md](REPORT.md).
 
 ## Приклад виводу
 
 ```
-=== Частина 4: Інтерактивна демонстрація ===
 Loaded 5 documents
 Index contains 37 unique words
-
-Демо OR-пошуку: SearchAnyWord("python", "linq")
-  [3] Python Overview
-  [4] C# Advanced Features
-  [5] Comparing Languages
 
 Enter search query (or 'exit'): programming language
 
@@ -49,7 +45,5 @@ Enter search query (or 'exit'): c# async
   C# supports LINQ, async/await, and many modern programming paradigms....
 
 Found 1 documents
-
-Enter search query (or 'exit'): exit
 ```
 

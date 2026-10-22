@@ -2,32 +2,23 @@
 
 **Тема:** Перевантаження конструкторів: приклади та сценарії.
 
-**Проєкт:** `IndependentWork2`
+**Проєкт:** `IndependentWork2` — клас `Product`
 
-## Клас Product
+## Опис класу
 
-- приватні поля: `_id` (int), `_name` (string), `_price` (decimal), `_category` (string), `_stockCount` (int)
-- read-only властивості: `Id`, `Name`, `Price`, `Category`, `StockCount` (тільки `get`, змінити після створення не можна)
-- конструктори:
-  - **основний** — `Product(int id, string name, decimal price, string category, int stockCount)`, ініціалізує всі поля;
-  - **скорочений** — `Product(int id, string name, decimal price) : this(id, name, price, "Uncategorized", 0)`;
-  - **копіювання** — `Product(Product other) : this(other.Id, other.Name, other.Price, other.Category, other.StockCount)`.
-- `ToString()` перевизначено: `ID, Name, Price (формат :C), Category, Stock`
+Реалізовано клас `Product` для інтернет-магазину:
+- **Приватні поля:** `_id` (int), `_name` (string), `_price` (decimal), `_category` (string), `_stockCount` (int)
+- **Властивості:** `Id`, `Name`, `Price`, `Category`, `StockCount` — тільки для читання
+- **Конструктор 1 (основний):** приймає всі п'ять параметрів і ініціалізує поля
+- **Конструктор 2 (скорочений):** `Product(int id, string name, decimal price) : this(id, name, price, "Uncategorized", 0)`
+- **Конструктор 3 (копіювання):** `Product(Product other) : this(other.Id, other.Name, other.Price, other.Category, other.StockCount)`
+- **Метод:** `override ToString()` — повна інформація про товар, ціна у форматі `:C`
 
-Скорочений конструктор і конструктор копіювання не дублюють код присвоєння полів — вони передають дані в основний конструктор через `: this(...)`, тому логіка ініціалізації знаходиться в одному місці.
+## Демонстрація в Main
 
-## Що демонструє Main
-
-- товар 1 створено основним конструктором, товар 2 — скороченим (категорія `Uncategorized`, склад 0), товар 3 — копія товару 1;
-- для виводу ціни у гривнях встановлено культуру `uk-UA`, тому `:C` дає `₴`;
-- в кінці перевіряється, що копія — це окремий об'єкт (`ReferenceEquals` = False).
-
-## Запуск
-
-```
-cd Самостійні/Самостійна_02/IndependentWork2
-dotnet run
-```
+1. **Товар 1** — створено основним конструктором
+2. **Товар 2** — створено скороченим конструктором (категорія `Uncategorized`, склад 0)
+3. **Товар 3** — копія товару 1 через конструктор копіювання; перевірка `ReferenceEquals` показує, що це окремий об'єкт
 
 ## Приклад виводу
 
