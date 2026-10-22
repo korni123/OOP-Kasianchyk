@@ -37,4 +37,5 @@
 Аналіз прикладів з Dapper, Serilog і Newtonsoft.Json, порівняльна таблиця складності та висновки — у файлі [REPORT.md](REPORT.md).
 
 ## Приклад виводу
+<img width="731" height="605" alt="image" src="https://github.com/user-attachments/assets/7a5019f3-3388-407f-b119-a6887aabfb21" />
 
