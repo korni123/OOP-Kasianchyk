@@ -25,6 +25,8 @@
 3. Спроба `Get("ua")` — перехоплюється `KeyNotFoundException`
 
 ## Результат тестів
+<img width="778" height="717" alt="image" src="https://github.com/user-attachments/assets/0d867a30-3493-4f51-9769-8efac729ba81" />
 
 ## Приклад виводу
 
+<img width="768" height="380" alt="image" src="https://github.com/user-attachments/assets/575629fb-c1ec-4947-a27d-41abc3c93a6b" />
