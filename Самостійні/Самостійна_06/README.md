@@ -29,3 +29,4 @@
 
 ## Приклад виводу
 
+<img width="761" height="423" alt="image" src="https://github.com/user-attachments/assets/c1839ba2-c851-460e-89fa-b5ec510582ba" />
