@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="IndependentWork7.Tests/IndependentWork7.Tests.csproj" />
+  <Project Path="IndependentWork7/IndependentWork7.csproj" />
+</Solution>
