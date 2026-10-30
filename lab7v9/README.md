@@ -68,6 +68,8 @@ dotnet test
 
 ## Приклад виводу
 
-(тут скріншот `dotnet run`)
+<img width="672" height="381" alt="image" src="https://github.com/user-attachments/assets/3983db89-8a2f-4c83-aafb-101ae865f4d0" />
 
-(тут скріншот `dotnet test`)
+
+<img width="811" height="212" alt="image" src="https://github.com/user-attachments/assets/4dcdebcc-4e1f-4f9a-b4ba-3e19d0b32a5d" />
+
