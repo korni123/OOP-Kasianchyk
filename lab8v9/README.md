@@ -38,4 +38,5 @@ dotnet run --project lab8v9
 
 ## Приклад виводу
 
-(скріншот)
+<img width="975" height="564" alt="image" src="https://github.com/user-attachments/assets/2a0b0f25-2b89-47f0-b28a-5f5203d1c548" />
+
