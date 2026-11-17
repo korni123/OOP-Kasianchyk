@@ -22,7 +22,3 @@
 cd Самостійні/Самостійна_18
 dotnet run --project IndependentWork18 -c Release
 ```
-
-## Приклад виводу
-
-![Приклад виводу](output.png)

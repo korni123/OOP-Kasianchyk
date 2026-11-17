@@ -31,13 +31,3 @@ cd Самостійні/Самостійна_13
 dotnet run --project IndependentWork13
 dotnet test IndependentWork13.Tests
 ```
-
-## Приклад виводу
-
-dotnet run:
-
-![Приклад виводу dotnet run](output.png)
-
-dotnet test:
-
-![Приклад виводу dotnet test](test-output.png)

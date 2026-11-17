@@ -29,7 +29,3 @@
 cd Самостійні/Самостійна_17
 dotnet run --project IndependentWork17 -c Release
 ```
-
-## Приклад виводу
-
-![Приклад виводу](output.png)

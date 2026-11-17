@@ -29,7 +29,3 @@
 cd Самостійні/Самостійна_20
 dotnet run --project IndependentWork20
 ```
-
-## Приклад виводу
-
-![Приклад виводу](output.png)
