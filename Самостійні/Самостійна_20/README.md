@@ -32,4 +32,4 @@ dotnet run --project IndependentWork20
 
 ## Приклад виводу
 
-(скріншот)
+![Приклад виводу](output.png)

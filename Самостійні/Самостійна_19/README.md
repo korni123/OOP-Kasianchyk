@@ -29,4 +29,4 @@ dotnet run --project IndependentWork19
 
 ## Приклад виводу
 
-(скріншот)
+![Приклад виводу](output.png)

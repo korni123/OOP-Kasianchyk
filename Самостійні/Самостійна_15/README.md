@@ -30,4 +30,4 @@ dotnet run --project IndependentWork15
 
 ## Приклад виводу
 
-(скріншот)
+![Приклад виводу](output.png)

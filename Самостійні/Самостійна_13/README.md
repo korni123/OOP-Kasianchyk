@@ -36,8 +36,8 @@ dotnet test IndependentWork13.Tests
 
 dotnet run:
 
-(скріншот)
+![Приклад виводу dotnet run](output.png)
 
 dotnet test:
 
-(скріншот)
+![Приклад виводу dotnet test](test-output.png)

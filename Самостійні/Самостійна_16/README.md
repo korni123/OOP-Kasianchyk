@@ -45,4 +45,4 @@ dotnet run --project IndependentWork16 -c Release
 
 ## Приклад виводу
 
-(скріншот)
+![Приклад виводу](output.png)

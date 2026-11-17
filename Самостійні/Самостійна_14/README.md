@@ -42,4 +42,4 @@ dotnet run --project IndependentWork14
 
 ## Приклад виводу
 
-(скріншот)
+![Приклад виводу](output.png)

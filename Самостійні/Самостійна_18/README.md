@@ -25,4 +25,4 @@ dotnet run --project IndependentWork18 -c Release
 
 ## Приклад виводу
 
-(скріншот)
+![Приклад виводу](output.png)
