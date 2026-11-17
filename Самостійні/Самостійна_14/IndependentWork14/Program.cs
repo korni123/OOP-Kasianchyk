@@ -1,0 +1,48 @@
+using IndependentWork14;
+
+Console.WriteLine("=== Scenario 1: FileMetadataCache (Dictionary) ===");
+FileMetadataCache cache = new FileMetadataCache();
+cache.Add(new FileMetadata("report.docx", 25400, new DateTime(2026, 11, 2, 14, 30, 0), "A1B2C3"));
+cache.Add(new FileMetadata("photo.jpg", 1830000, new DateTime(2026, 10, 20, 9, 15, 0), "D4E5F6"));
+cache.Add(new FileMetadata("notes.txt", 980, new DateTime(2026, 11, 10, 18, 0, 0), "778899"));
+Console.WriteLine("Count: " + cache.Count);
+Console.WriteLine("Add report.docx again: " + cache.Add(new FileMetadata("REPORT.DOCX", 1, DateTime.Now, "00")));
+Console.WriteLine("Contains photo.jpg: " + cache.Contains("photo.jpg"));
+Console.WriteLine("Contains PHOTO.JPG (case-insensitive): " + cache.Contains("PHOTO.JPG"));
+Console.WriteLine("Get notes.txt: " + cache.Get("notes.txt"));
+Console.WriteLine("Get missing.txt: " + (cache.Get("missing.txt") == null ? "null" : "found"));
+Console.WriteLine("Remove photo.jpg: " + cache.Remove("photo.jpg"));
+Console.WriteLine("Contains photo.jpg: " + cache.Contains("photo.jpg"));
+Console.WriteLine("Count: " + cache.Count);
+
+Console.WriteLine();
+Console.WriteLine("=== Scenario 2: TagManager (Dictionary + HashSet) ===");
+TagManager tags = new TagManager();
+tags.AddTag("article1", "C#");
+tags.AddTag("article1", "programming");
+tags.AddTag("article1", "c#");
+tags.AddTag("article1", "dotnet");
+tags.AddTag("article2", "dotnet");
+tags.AddTag("article2", "web");
+tags.AddTag("article2", "programming");
+tags.AddTag("article3", "music");
+Console.WriteLine("Tags of article1 (C# and c# are the same): " + string.Join(", ", tags.GetTags("article1")));
+Console.WriteLine("All unique tags (UnionWith): " + string.Join(", ", tags.GetAllUniqueTags()));
+Console.WriteLine("Common tags article1 and article2 (IntersectWith): " + string.Join(", ", tags.FindCommonTags("article1", "article2")));
+Console.WriteLine("Only in article1 (ExceptWith): " + string.Join(", ", tags.FindUniqueTags("article1", "article2")));
+tags.RemoveTag("article1", "dotnet");
+Console.WriteLine("After removing dotnet from article1: " + string.Join(", ", tags.GetTags("article1")));
+Console.WriteLine("Common tags article1 and article3: " + (tags.FindCommonTags("article1", "article3").Count == 0 ? "none" : "some"));
+
+Console.WriteLine();
+Console.WriteLine("=== Scenario 3: SearchIndex (Dictionary + HashSet) ===");
+SearchIndex index = new SearchIndex();
+index.AddDocument(1, "C# is a great programming language");
+index.AddDocument(2, "Java is also a programming language");
+index.AddDocument(3, "C# and Java are popular");
+Console.WriteLine("Unique words in index: " + index.WordsCount);
+Console.WriteLine("Search 'java': " + string.Join(", ", index.Search("java")));
+Console.WriteLine("Search 'language': " + string.Join(", ", index.Search("language")));
+Console.WriteLine("SearchMultiple 'c#', 'java': " + string.Join(", ", index.SearchMultiple("c#", "java")));
+Console.WriteLine("SearchMultiple 'programming', 'language': " + string.Join(", ", index.SearchMultiple("programming", "language")));
+Console.WriteLine("Search 'python': " + (index.Search("python").Count == 0 ? "nothing found" : "found"));
