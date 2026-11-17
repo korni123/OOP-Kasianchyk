@@ -2,7 +2,7 @@
 
 **Тема:** LINQ pipelines: ETL та аналітика.
 
-Проєкт: `IndependentWork11`. Опис пайплайнів і аналіз продуктивності — у файлі [REPORT.md](REPORT.md).
+Проєкт: `IndependentWork17`. Опис пайплайнів і аналіз продуктивності — у файлі [REPORT.md](REPORT.md).
 
 ## Сутності
 
@@ -26,8 +26,8 @@
 ## Запуск
 
 ```
-cd Самостійні/Самостійна
-dotnet run --project IndependentWork11 -c Release
+cd Самостійні/Самостійна_17
+dotnet run --project IndependentWork17 -c Release
 ```
 
 ## Приклад виводу

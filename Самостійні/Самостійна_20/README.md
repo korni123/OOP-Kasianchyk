@@ -2,7 +2,7 @@
 
 **Тема:** Реалізація exponential backoff.
 
-Проєкт: `IndependentWork14`. Висновок про межі застосування Retry — у файлі [REPORT.md](REPORT.md).
+Проєкт: `IndependentWork20`. Висновок про межі застосування Retry — у файлі [REPORT.md](REPORT.md).
 
 ## RetryPolicy
 
@@ -26,8 +26,8 @@
 ## Запуск
 
 ```
-cd Самостійні/Самостійна
-dotnet run --project IndependentWork14
+cd Самостійні/Самостійна_20
+dotnet run --project IndependentWork20
 ```
 
 ## Приклад виводу

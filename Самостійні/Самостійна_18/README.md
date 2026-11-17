@@ -2,7 +2,7 @@
 
 **Тема:** PLINQ: дослідження продуктивності та безпеки.
 
-Проєкт: `IndependentWork12`. Опис експериментів і висновки — у файлі [REPORT.md](REPORT.md).
+Проєкт: `IndependentWork18`. Опис експериментів і висновки — у файлі [REPORT.md](REPORT.md).
 
 ## Що робить програма
 
@@ -19,8 +19,8 @@
 Запускати треба в режимі Release, щоб вимірювання були чесними. Перший розділ може працювати кілька секунд.
 
 ```
-cd Самостійні/Самостійна
-dotnet run --project IndependentWork12 -c Release
+cd Самостійні/Самостійна_18
+dotnet run --project IndependentWork18 -c Release
 ```
 
 ## Приклад виводу

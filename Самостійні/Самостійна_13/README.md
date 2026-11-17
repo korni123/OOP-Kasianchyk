@@ -2,7 +2,7 @@
 
 **Тема:** Узагальнений кеш Cache&lt;TKey, TValue&gt; із тестами.
 
-Проєкти: `IndependentWork7` (основний) і `IndependentWork7.Tests` (xUnit-тести).
+Проєкти: `IndependentWork13` (основний) і `IndependentWork13.Tests` (xUnit-тести).
 
 ## Cache&lt;TKey, TValue&gt;
 
@@ -27,9 +27,9 @@
 ## Запуск
 
 ```
-cd Самостійні/Самостійна
-dotnet run --project IndependentWork7
-dotnet test IndependentWork7.Tests
+cd Самостійні/Самостійна_13
+dotnet run --project IndependentWork13
+dotnet test IndependentWork13.Tests
 ```
 
 ## Приклад виводу

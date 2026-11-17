@@ -2,7 +2,7 @@
 
 **Тема:** Вивчення Dictionary&lt;TKey, TValue&gt; та HashSet&lt;T&gt; у бібліотеках .NET.
 
-Проєкт: `IndependentWork8`. Звіт з аналізом open-source прикладів і порівняльною таблицею — у файлі [REPORT.md](REPORT.md).
+Проєкт: `IndependentWork14`. Звіт з аналізом open-source прикладів і порівняльною таблицею — у файлі [REPORT.md](REPORT.md).
 
 ## Класи
 
@@ -36,8 +36,8 @@
 ## Запуск
 
 ```
-cd Самостійні/Самостійна
-dotnet run --project IndependentWork8
+cd Самостійні/Самостійна_14
+dotnet run --project IndependentWork14
 ```
 
 ## Приклад виводу

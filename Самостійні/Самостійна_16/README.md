@@ -2,7 +2,7 @@
 
 **Тема:** Створення інвертованого індексу для пошуку документів.
 
-Проєкт: `InvertedIndexDemo`. Таблиця вимірювань і висновки — у файлі [REPORT.md](REPORT.md).
+Проєкт: `IndependentWork16`. Таблиця вимірювань і висновки — у файлі [REPORT.md](REPORT.md).
 
 ## Класи
 
@@ -39,8 +39,8 @@
 ## Запуск
 
 ```
-cd Самостійні/Самостійна
-dotnet run --project InvertedIndexDemo -c Release
+cd Самостійні/Самостійна_16
+dotnet run --project IndependentWork16 -c Release
 ```
 
 ## Приклад виводу

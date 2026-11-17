@@ -2,7 +2,7 @@
 
 **Тема:** Делегати й лямбда-вирази: власні утиліти для колекцій.
 
-Проєкт: `lab9-self-v9`. Відповіді на запитання завдання 4 — у файлі [REPORT.md](REPORT.md).
+Проєкт: `IndependentWork15`. Відповіді на запитання завдання 4 — у файлі [REPORT.md](REPORT.md).
 
 ## CollectionUtils
 
@@ -24,8 +24,8 @@
 ## Запуск
 
 ```
-cd Самостійні/Самостійна
-dotnet run --project lab9-self-v9
+cd Самостійні/Самостійна_15
+dotnet run --project IndependentWork15
 ```
 
 ## Приклад виводу
