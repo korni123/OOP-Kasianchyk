@@ -44,4 +44,4 @@ dotnet run --project lab10v9
 
 ## Приклад виводу
 
-(скріншот)
+![Приклад виводу](output.png)
