@@ -46,4 +46,5 @@ dotnet run --project lab13v9
 
 ## Приклад виводу
 
-(скріншот)
+<img width="1089" height="249" alt="image" src="https://github.com/user-attachments/assets/73e040ae-6269-4205-bbe8-3f4ddac9681c" />
+
