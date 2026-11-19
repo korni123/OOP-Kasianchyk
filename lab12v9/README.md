@@ -59,4 +59,5 @@ dotnet run --project lab12v9
 
 ## Приклад виводу
 
-(скріншот)
+<img width="990" height="818" alt="image" src="https://github.com/user-attachments/assets/d0e2caea-aa82-4f86-97e2-02bd7fa4131f" />
+
