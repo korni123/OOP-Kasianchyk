@@ -1,4 +1,4 @@
-# Лабораторна робота №12
+﻿# Лабораторна робота №12
 
 **Тема:** Обробка IO/мережевих помилок та патерн Retry.
 
@@ -59,5 +59,6 @@ dotnet run --project lab12v9
 
 ## Приклад виводу
 
-<img width="990" height="818" alt="image" src="https://github.com/user-attachments/assets/d0e2caea-aa82-4f86-97e2-02bd7fa4131f" />
+![Приклад виводу](output.png)
+
 
